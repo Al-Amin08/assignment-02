@@ -271,3 +271,115 @@ header{
     width: 70%;
     /* margin: 0 auto; */
 }
+
+/* BMI calculation */
+
+/* chart */
+.BMI-section{
+    width: 70%;
+    margin: 100px auto;
+}
+.BMI-chart th{
+    font-weight: 500;
+    color: white;
+}
+table{
+   color: rgba(255, 255, 255, 0.5);
+   font-size: .875rem;
+   border-collapse: collapse;
+   text-align: center;
+   border:1px solid rgba(255, 255, 255, 0.1);
+   width: 310px;
+   
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+}  
+
+/* BMI-title */
+.BMI{
+    /* text-align: center; */
+}
+.BMI-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.detail{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    
+}
+.BMI-calculate{
+    background-color: rgb(34, 34, 34);
+    /* width: 100%; */
+}
+
+.BMI-h2{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+/* BMi calculate */
+
+.BMI-p{
+    margin-top: 14px ;
+    margin-bottom: 34px;
+}
+.BMI-input-option{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    /* font-size: 1rem; */
+    
+}
+select,input{
+    
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.BMI-input-option input,select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 18px 30px;
+}
+
+#factor{
+    padding: 15px 30px;
+    grid-column: span 2;
+}
+
+.p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+}
+
+.BMI-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 190px;
+}
+
+
+/* our team */
+.team-container{
+    width: 70%;
+    margin: 100px auto;
+}
+.team-img{
+    /* width: 20% */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
