@@ -169,12 +169,10 @@ header{
 
     border-radius: 12px;
     backdrop-filter: blur(5px);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
+   
     text-align: left;
     padding-left:24px ;
-    /* padding-top: 17px; */
+
     padding-bottom: 17px;
     
 }
@@ -272,6 +270,7 @@ header{
     /* margin: 0 auto; */
 }
 
+
 /* BMI calculation */
 
 /* chart */
@@ -309,6 +308,7 @@ th, td {
 .detail{
     color: rgba(255, 255, 255, 0.5);
     font-size: .875rem;
+    line-height: 24px;
     
 }
 .BMI-calculate{
@@ -414,7 +414,7 @@ input::placeholder{
     /* padding-top: 50px; ; */
     display: flex;
     flex-direction: column-reverse;
-    align-items:self-start;
+    align-items: self-start;
 
 }
 
@@ -480,6 +480,47 @@ input::placeholder{
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
     margin-left: 10px;
+}
+
+/* Why you choose us */
+.development{
+    display: flex;
+    gap: 100px;
+    margin-top: 32px ;
+    /* width: 946px;
+    padding: 0 auto; */
+  /* align-items: center; */
+    height: 300px;
+    padding: 48px;
+    border-radius: 16px;
+}
+.choose-container{
+    background-color:  rgb(34, 34, 34);
+    border-radius: 18px;
+    width: 70%;
+    margin: 100px auto; 
+    padding: 50px 10px 100px 10px;
+}
+.p-detail{
+    font-size: .875rem;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.h1-title{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+    
+
+}
+
+.development img{
+    width: 100%;
+    border-radius: 18px;
+}
+.text-center{
+    text-align: center;
 }
 
 
@@ -549,4 +590,122 @@ hr{
     margin: 35px ;
     text-align: center;
     padding-bottom:50px ;
+}
+
+.fa-solid{
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .nav-option{
+        display: none;
+       
+    }
+    .fa-solid{
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+
+    }
+
+    .video-tutorial{
+        left: 32px;
+        top: 850px;  
+
+    }
+    .circle{
+        left: 50px;
+        top: 878px; 
+    }
+
+    .free-video{
+        
+        left: 320px;
+        top: 680px; 
+    }
+
+    /* Change your habit */
+    .habit-image-container{
+        flex-direction: column;
+        
+    }
+    .img{
+        margin-bottom: 20px;
+    }
+
+    /* Run an extra mile */
+    .run-container{
+        flex-direction: column;
+    }
+
+    .banner-btn{
+        /* width: 70%; */
+        padding: 16px 40px;
+        margin-bottom: 20px ;
+    }
+
+    /* BMI */
+    .BMI-section{
+        flex-direction: column;
+        /* margin-left: -180px ;
+         */
+         /* width: 100%; */}
+    .BMI-input-option input,select{
+        padding: 9px 15px;
+        
+    }
+   
+    .BMI-section{
+        
+        padding: 52px 20px;
+        margin-left: 10px;
+
+    }
+    .BMI-h2{
+        margin-top: 30px;
+    }
+    .BMI-chart{
+        margin-top: 30px;
+    }
+
+    /* Our Team */
+    .team-img{
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    /* footer */
+    .fitnest-footer{
+        width: 100%;
+    }
+    .footer-container{
+        
+        width: 100% ;
+    }
+    .footer{
+       
+        flex-direction: column;
+        
+    }
+
+    .service-footer{
+        margin-top: 20px;
+    }
+
+    .service-footer {
+        width: 100%;
+    }
+
+    /* why you choose me */
+    .development{
+        display: block;
+        
+    }
+
+    /* #img{
+        display: flex;
+        
+        flex-direction: column-reverse;
+    } */
 }
